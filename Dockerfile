@@ -93,3 +93,4 @@ RUN set -eux; \
         rm /usr/local/etc/php-fpm.d/www* \
         ; \
         chown -R www-data: /var/www/html/
+        
