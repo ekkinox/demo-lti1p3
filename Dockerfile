@@ -73,8 +73,6 @@ RUN set -eu; \
 FROM lti-base as prod
 
 COPY --from=composer /app .
-COPY --from=composer /app /app
-COPY ./docker/phpfpm/www.conf /usr/local/etc/php-fpm.d/zz-docker.conf
 RUN set -eux; \
         { \
             echo 'opcache.memory_consumption=256'; \
